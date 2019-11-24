@@ -1,0 +1,35 @@
+{
+  "name": "argument-types",
+  "version": "1.0.0",
+  "description": "Check function argument like React PropTypes in development mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxitten/argument-types.git"
+  },
+  "author": "Behnam Mohammadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uxitten/argument-types/issues"
+  },
+  "homepage": "https://github.com/uxitten/argument-types#readme",
+  "dependencies": {
+    "is": "^3.3.0",
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-jest": "^24.9.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
