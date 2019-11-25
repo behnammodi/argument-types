@@ -1,6 +1,6 @@
 import is from "is";
 
-Function.prototype.callSafe = function(args) {
+Function.prototype.callSafe = function(context, args) {
   const argumentTypes = this.argumentTypes;
   if (is.object(argumentTypes)) {
     Object.keys(argumentTypes).forEach(key => {
@@ -10,7 +10,7 @@ Function.prototype.callSafe = function(args) {
         );
     });
   }
-  return this.call(null, args);
+  return this.call(context, args);
 };
 
 const ArgumentTypes = {
