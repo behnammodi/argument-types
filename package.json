@@ -1,6 +1,6 @@
 {
   "name": "argument-types",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Check function argument like React PropTypes in development mode",
   "main": "index.js",
   "scripts": {
