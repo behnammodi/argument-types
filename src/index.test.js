@@ -9,9 +9,9 @@ describe("Test", () => {
     sum.argumentTypes = { a: ArgumentTypes.number, b: ArgumentTypes.number };
 
     expect(() => {
-      sum.safe({ a: 2, b: "3" });
+      sum.callSafe({ a: 2, b: "3" });
     }).toThrow();
 
-    expect(sum.safe({ a: 2, b: 3 })).toBe(5);
+    expect(sum.callSafe({ a: 2, b: 3 })).toBe(5);
   });
 });

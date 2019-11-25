@@ -1,14 +1,16 @@
 import is from "is";
 
-Function.prototype.safe = function(args) {
+Function.prototype.callSafe = function(args) {
   const argumentTypes = this.argumentTypes;
   if (is.object(argumentTypes)) {
     Object.keys(argumentTypes).forEach(key => {
       if (argumentTypes[key](args[key]) === false)
-        throw new Error(`${key} argument type is wrong, ${key} value is ${args[key]}`);
+        throw new Error(
+          `${key} argument type is wrong, ${key} value is ${args[key]}`
+        );
     });
   }
-  return this(args);
+  return this.call(null, args);
 };
 
 const ArgumentTypes = {

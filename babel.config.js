@@ -7,12 +7,12 @@ module.exports = function(api) {
   return {
     presets,
     plugins,
-    env: {      
+    env: {
       production: {
         comments: false,
-        presets: ["minify"]
-      }
-    },
-    ignore: ["**/*.test.js"]
+        presets: ["minify"],
+        ignore: ["**/*.test.js"]
+      },      
+    }
   };
 };
