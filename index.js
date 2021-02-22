@@ -9,7 +9,7 @@ var _is = _interopRequireDefault(require("is"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-Function.prototype.safe = function (args) {
+Function.prototype.callSafe = function (context, args) {
   var argumentTypes = this.argumentTypes;
 
   if (_is["default"].object(argumentTypes)) {
@@ -18,7 +18,7 @@ Function.prototype.safe = function (args) {
     });
   }
 
-  return this(args);
+  return this.call(context, args);
 };
 
 var ArgumentTypes = {

@@ -9,23 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uxitten/argument-types.git"
+    "url": "git+https://github.com/behnammodi/argument-types.git"
   },
   "author": "Behnam Mohammadi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/uxitten/argument-types/issues"
+    "url": "https://github.com/behnammodi/argument-types/issues"
   },
-  "homepage": "https://github.com/uxitten/argument-types#readme",
+  "homepage": "https://github.com/behnammodi/argument-types#readme",
   "dependencies": {
     "is": "^3.3.0",
-    "jest": "^24.9.0"
+    "jest": "^26.6.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "babel-jest": "^24.9.0"
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "babel-jest": "^26.6.3"
   },
   "jest": {
     "transform": {
